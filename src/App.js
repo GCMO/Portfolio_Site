@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Card from './components/Card'
+import CarouselCard from './components/CarouselCards'
+import { Container } from './components/styles/Container.styled'
+import GlobalStyles from './components/styles/Global'
+import content from './content'
+import projects from './projects'
+import { Carousel } from "react-configurable-carousel"
+// import Carousel from './components/Carousel'
+
+const theme = {
+  colors: {
+    header: '#ebfbff',
+    body: '#fff',
+    footer: '#fff',
+  },
+  mobile: '768px',
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header />
+
+          <Container>
+            {content.map((item, index) => (
+              <Card key={index} item={item} />
+            ))}
+
+              <Carousel
+                // arrows={true}
+                dotsNavigation={true}
+                dotsNavigationInside={true}
+                width={"1160px"}
+                height={"500px"}
+                carouselStyle={"2d"}
+                dotNavigationFillColor={"#ff0099"}
+                autoScrollInterval={3000}
+                autoScrollClickDelay={10000}
+                outOfFocusDarken={true}
+                >
+                  {projects.map((item, index) => (
+                    <CarouselCard key={index} item={item} />
+                ))}
+              </Carousel>
+
+          </Container>
+          
+        <Footer />
+      </>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
