@@ -8,7 +8,7 @@ const content = [
   {
     id: 2,
     title: 'My Code Treks',
-    body: "If you google a term and you're pretty sure you have put in a Grepper answer for something close to your google search, press M and Grepper will pull back any of your answers that are at all similar.  You can also press O and Grepper will return other answers that may be of help.",
+    body: 'My Code Treks begin in 2018 when I started turning my .xls documents into python files, in an effort to automate the amount of time I used to spend for data-entry and reporting. Show after I began to dedicate my weekend to small BE projects and finally I applyed to <SALT> and never looked back',
     image: 'illustration-your-users.svg',
   },
 ]

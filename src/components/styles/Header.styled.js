@@ -69,5 +69,4 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-
   `;

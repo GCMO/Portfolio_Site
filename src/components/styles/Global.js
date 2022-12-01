@@ -12,7 +12,15 @@ const GlobalStyles = createGlobalStyle`
     color: hsl(192, 100%, 9%);
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
-    margin: 0;
+    margin:0px;
+  }
+
+  .container{
+    background: ${({ theme }) => theme.colors.body};
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    margin:40px;
   }
 
   p {

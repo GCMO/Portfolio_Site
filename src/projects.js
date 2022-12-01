@@ -29,7 +29,7 @@ const projects = [
   description: 'Standard React Native educational project. One screens: with tasks and text input. Click on input text, type a task, click on enter and the task will be displayed below the text input. Create todo items, mark them as complete, delete them',
   features: 'TechStack: React-Native, Expo, JS',
   link: 'https://github.com/GCMO/ToDoList-React_Native',
-  image: 'todoapp_Native.png' 
+  image: 'TodoApp_Native.png' 
 },
 {
   id: 5,
@@ -39,30 +39,30 @@ const projects = [
   link: 'https://github.com/GCMO/NOTESApp-React_Native',
   image: 'NotesApp_Native.png' 
 },
-{
-  id: '',
-  title: 'Speach Recognition API',
-  description: 'The app displays directly on screen what is recorder via microphone, known as STT: Speach to Text. It also allows for TTS: Text to Speach, given a specific text input the app reads it out loud.',
-  features: '',
-  link: '',
-  image: '' 
-},
-{
-  id: '',
-  title: 'Pomodoro App',
-  description: 'Track your time, set breaks, be productive.',
-  features: '',
-  link: '',
-  image: '' 
-},
-{
-  id: '' ,
-  title: 'Ecommerce - Alternatives',
-  description: '',
-  features: '',
-  link: '',
-  image: '' 
-},
+// {
+//   id: '',
+//   title: 'Speach Recognition API',
+//   description: 'The app displays directly on screen what is recorder via microphone, known as STT: Speach to Text. It also allows for TTS: Text to Speach, given a specific text input the app reads it out loud.',
+//   features: '',
+//   link: '',
+//   image: '' 
+// },
+// {
+//   id: '',
+//   title: 'Pomodoro App',
+//   description: 'Track your time, set breaks, be productive.',
+//   features: '',
+//   link: '',
+//   image: '' 
+// },
+// {
+//   id: '' ,
+//   title: 'Ecommerce - Alternatives',
+//   description: '',
+//   features: '',
+//   link: '',
+//   image: '' 
+// },
 ];
 
 export default projects;

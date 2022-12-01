@@ -14,16 +14,16 @@ const Carousel = (props) => {
   }, [children]);
 
   // Handle the click on the left/right buttons
+  const prev = () => {
+    if (currentIndex > 0){
+      setCurrentIndex(prevState => prevState - 1);
+    }}
   const next = () => {
     if ( currentIndex < (length -1) ) { 
       setCurrentIndex(prevState => prevState + 1);
       // setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1); <refactorred>
   }}
 
-  const prev = () => {
-    if (currentIndex > 0){
-      setCurrentIndex(prevState => prevState - 1);
-    }}
 
 
   return (
