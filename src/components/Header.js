@@ -43,7 +43,7 @@ export default function Header() {
             </Button> */}
           </div>
 
-          <Image src='./images/IMG_4241.png' alt='profile pic' />
+          <Image src='/images/IMG_4241.png' alt='profile pic' />
         </Flex>
       </Container>
     </StyledHeader>
