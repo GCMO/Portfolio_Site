@@ -16,7 +16,7 @@ const theme = {
     body: '#fff',
     footer: '#fff',
   },
-  mobile: '768px',
+  mobile: '860px',
 }
 
 function App() {
@@ -30,13 +30,13 @@ function App() {
             {content.map((item, index) => (
               <Card key={index} item={item} />
             ))}
-
+            <h2> MY PROJECTS </h2>
               <Carousel
                 // arrows={true}
                 dotsNavigation={true}
                 dotsNavigationInside={true}
-                width={"1160px"}
-                height={"500px"}
+                max-width={"100%"}
+                height={"auto"}
                 carouselStyle={"2d"}
                 dotNavigationFillColor={"#ff0099"}
                 autoScrollInterval={3000}

@@ -15,16 +15,25 @@ export const Nav = styled.nav`
   & > h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     /* font-style: italic; */
   }
 
   & > ul {}
 
+  .header-text{
+    max-width: 100%;
+    height: auto;
+    text-align:justify;
+  }
+  
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
+    .header-text{
+      text-align:justify;
+    }
   }
-`;
+  `;
 
   // Navigation Links
   // export const NavLink = styled.a`
