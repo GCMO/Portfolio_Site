@@ -13,7 +13,7 @@ export default function Header() {
 
         <Nav>
           <h1> <GiHoneycomb style={{marginBottom:"-6px"}}/> GABE'S CODE TREKS </h1>
-          <a href="../public/images/GOCV.pdf" download>
+          <a href="/GOCV_SaltFSD.pdf" download>
             <Button  bg='#ff4099' color='#fff'> Download CV </Button>
           </a>
           {/* <BrowserRouter>

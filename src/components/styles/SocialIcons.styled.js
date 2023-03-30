@@ -25,6 +25,7 @@ export const StyledSocialIcons = styled.div`
     &:hover {
       color: #ff0099;
       border: 4px solid #ff0099;
+      box-shadow: 0 0 30px #ff0099
     }
   }
   
