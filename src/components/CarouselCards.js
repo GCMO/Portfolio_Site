@@ -12,7 +12,7 @@ const CarouselCard = ({ item: { id, title, description, features, link, image } 
       </div>
 
       <div>
-        <Image src={`/images/${image}`} alt='projects' />
+        <Image src={`/images/${image}`} style={{margin:'0 20px'}} alt='projects' />
       </div>
     </StyledCard>
   )

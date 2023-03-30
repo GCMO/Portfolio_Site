@@ -1,13 +1,13 @@
 import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './components/styles/GlobalStyles'
+import content from './content'
+import projects from './projects'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Card from './components/Card'
 import CarouselCard from './components/CarouselCards'
-import { Container } from './components/styles/Container.styled'
-import GlobalStyles from './components/styles/Global'
-import content from './content'
-import projects from './projects'
 import { Carousel } from "react-configurable-carousel"
+import { Container } from './components/styles/Container.styled'
 // import Carousel from './components/Carousel'
 
 const theme = {
@@ -34,10 +34,10 @@ function App() {
               <Carousel
                 // arrows={true}
                 dotsNavigation={true}
-                dotsNavigationInside={true}
+                dotsNavigationInside={false}
                 max-width={"100%"}
                 height={"auto"}
-                carouselStyle={"2d"}
+                carouselStyle={"3d"}
                 dotNavigationFillColor={"#ff0099"}
                 autoScrollInterval={3000}
                 autoScrollClickDelay={10000}

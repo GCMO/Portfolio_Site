@@ -3,7 +3,8 @@ import { StyledHeader, Nav, Image, } from './styles/Header.styled';
 import { Container } from './styles/Container.styled';
 import { Flex } from './styles/Flex.styled';
 import { Button } from './styles/Button.styled';
-import { GiHoneycomb } from "react-icons/gi";
+import { SiStartrek } from "react-icons/si";
+import { motion } from "framer-motion"
 
 
 export default function Header() {
@@ -12,9 +13,14 @@ export default function Header() {
       <Container>
 
         <Nav>
-          <h1> <GiHoneycomb style={{marginBottom:"-6px"}}/> GABE'S CODE TREKS </h1>
+          <motion.h1 
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}> 
+            <SiStartrek style={{marginBottom:"-6px"}}/> GABE'S CODE-TREKS 
+          </motion.h1>
           <a href="/GOCV_SaltFSD.pdf" download>
-            <Button  bg='#ff4099' color='#fff'> Download CV </Button>
+            <Button bg='#ff4099' color='#fff'> Download CV</Button>
           </a>
           {/* <BrowserRouter>
               <Routes>

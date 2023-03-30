@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   margin-bottom:50px;
 
   & > h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 700;
     padding-bottom: 5px;
     /* font-style: italic; */
@@ -26,6 +26,14 @@ export const Nav = styled.nav`
     height: auto;
     text-align:justify;
   }
+/* 
+  .header-text:hover {
+    font-size:15px;
+    cursor:"pointer";
+    opacity: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 20px #ff0099;
+  } */
   
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
@@ -68,10 +76,24 @@ export const Image = styled.img`
   margin-left: 40px;
   border-radius: 7px;
   margin-top: 7px;
-
+  animation: slideLeft 3s ease forwards;
+  
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 40px 0 30px;
   }
+  
+  /* KEYFRAME ANIMATION DETAILS */
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  };
+
 `
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
